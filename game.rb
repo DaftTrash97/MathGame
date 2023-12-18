@@ -45,7 +45,7 @@ class Game
       # Find the player with the highest score
       winners = @players.select { |player| player.lives > 0 }
   
-      # If there is only one winner, return that player; otherwise, it's a tie
+      # If there is only one winner, return that player
       winners.length == 1 ? winners.first : nil
     end
   
